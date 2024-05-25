@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div id="locationInput">
+            <input type="text" id="city" placeholder="Enter Your City">
+            <button onclick="getWeatherByCity()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M10 2a8 8 0 016.32 12.9l5.39 5.38-1.41 1.42-5.38-5.39A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/>
+                </svg>
+            </button>
+        </div>
+        <div id="weatherInfo">
+            <p id="location"></p>
+            <p id="description"></p>
+            <p id="temperature"></p>
+            <div class="weather-details">
+                <div id="wind"></div>
+                <div id="humidity"></div>
+                <div id="visibility"></div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
